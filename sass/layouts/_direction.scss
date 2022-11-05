@@ -1,0 +1,38 @@
+.direction-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* Фіксована (при видаленні img не втрачається ширина) сітка для елементів li, замість gap*/
+  margin-left: calc(-1 * var(--image-gap));
+  margin-top: calc(-1 * var(--image-gap));
+}
+.direction-item {
+  position: relative;
+  flex-basis: calc(100% / 3 - var(--image-gap));
+  margin-left: var(--image-gap);
+  margin-top: var(--image-gap);
+}
+
+.direction-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.direction-title {
+  font-weight: var(--second-font-weight);
+  font-size: 14px;
+  line-height: 1.14;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}

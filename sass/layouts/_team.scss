@@ -1,0 +1,78 @@
+.team {
+  background-color: var(--another-background-color);
+}
+
+.team-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* Фіксована (при видаленні img не втрачається ширина) сітка для елементів li, замість gap*/
+  margin-left: calc(-1 * var(--image-gap));
+  margin-top: calc(-1 * var(--image-gap));
+}
+
+.team-item {
+  background-color: var(--white-color);
+  flex-basis: calc(100% / 3 - var(--image-gap));
+  margin-left: var(--image-gap);
+  margin-top: var(--image-gap);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-contant {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color-text);
+  margin-bottom: 10px;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-maim-color-text);
+  margin-bottom: 16px;
+}
+
+.team-icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-icon-item {
+  width: 44px;
+  height: 44px;
+}
+
+.team-icon-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icon-link:hover,
+.team-icon-link:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
+}
