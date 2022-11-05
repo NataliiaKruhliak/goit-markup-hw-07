@@ -1,4 +1,4 @@
-@import "./utils/vars.scss";
+@import "./utils/variables";
 @import "./base/reset";
 @import "./base/common";
 @import "./utils/hidden";
@@ -10,11 +10,11 @@
 @import "./components/sections-title";
 @import "./components/modal";
 
-@import "./layouts/header";
-@import "./layouts/top-section";
-@import "./layouts/features";
-@import "./layouts/direction";
-@import "./layouts/team";
-@import "./layouts/clients";
-@import "./layouts/footer";
-@import "./layouts/portfolio";
+@import "./layouts-index/header";
+@import "./layouts-index/top-section";
+@import "./layouts-index/features";
+@import "./layouts-index/direction";
+@import "./layouts-index/team";
+@import "./layouts-index/clients";
+@import "./layouts-index/footer";
+@import "./layouts-portfolio/portfolio";
