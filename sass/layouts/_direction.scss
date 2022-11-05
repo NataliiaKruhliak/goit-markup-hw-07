@@ -6,6 +6,7 @@
   margin-left: calc(-1 * var(--image-gap));
   margin-top: calc(-1 * var(--image-gap));
 }
+
 .direction-item {
   position: relative;
   flex-basis: calc(100% / 3 - var(--image-gap));

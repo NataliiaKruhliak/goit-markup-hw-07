@@ -11,13 +11,13 @@ body {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.link:focus,
-.link:hover {
-  color: var(--accent-color);
-}
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
 
-.link.current {
-  color: var(--accent-color);
+  &.current {
+    color: var(--accent-color);
+  }
 }

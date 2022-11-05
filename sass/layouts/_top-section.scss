@@ -40,9 +40,9 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.top-btn:focus,
-.top-btn:hover {
-  background-color: var(--btn-active);
+  &:focus,
+  &:hover {
+    background-color: var(--btn-active);
+  }
 }
