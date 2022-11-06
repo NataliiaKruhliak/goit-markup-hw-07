@@ -172,7 +172,7 @@ body {
   pointer-events: none;
 }
 
-.modal-btn {
+.modal__btn {
   width: 30px;
   height: 30px;
   background-color: transparent;
@@ -189,12 +189,12 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btn:hover, .modal-btn:focus {
+.modal__btn:hover, .modal__btn:focus {
   fill: var(--accent-color);
 }
 
 /* ------------------------------------Form Modal---------------------------------- */
-.modal-title {
+.modal__title {
   font-weight: var(--second-font-weight);
   font-size: 20px;
   line-height: 1.15;
@@ -203,15 +203,15 @@ body {
   margin-bottom: 12px;
 }
 
-.modal-input-container {
+.modal__container {
   margin-bottom: 20px;
 }
 
-.modal-field {
+.field {
   margin-bottom: 10px;
 }
 
-.input-title {
+.field__title {
   font-weight: inherit;
   font-size: 12px;
   line-height: 1.16;
@@ -221,7 +221,7 @@ body {
   display: block;
 }
 
-.modal-input {
+.field__input {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -236,34 +236,34 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus {
+.field__input:focus {
   border: 1px solid var(--accent-color);
 }
-.modal-input.text {
+.field__input--text {
   height: 40px;
   padding-left: 42px;
   padding-right: 16px;
 }
-.modal-input.comment {
+.field__input--comment {
   height: 120px;
   padding: 16px;
   resize: none;
 }
-.modal-input.comment::-moz-placeholder {
+.field__input--comment::-moz-placeholder {
   font-weight: inherit;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.modal-input.comment:-ms-input-placeholder {
+.field__input--comment:-ms-input-placeholder {
   font-weight: inherit;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.modal-input.comment::placeholder {
+.field__input--comment::placeholder {
   font-weight: inherit;
   font-size: 12px;
   line-height: 1.16;
@@ -271,15 +271,15 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.input-wrap {
+.field__input-wrap {
   position: relative;
 }
-.input-wrap:focus {
+.field__input-wrap:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
 
-.modal-input-icon {
+.field__icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -288,11 +288,11 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus + .modal-input-icon {
+.field__input:focus + .field__icon {
   fill: var(--accent-color);
 }
 
-.checkbox-container {
+.checkbox {
   text-align: center;
   justify-content: center;
   margin-bottom: 30px;
@@ -301,7 +301,7 @@ body {
   justify-content: center;
 }
 
-.checkbox-text {
+.checkbox__text {
   font-weight: inherit;
   font-size: 14px;
   line-height: 1.71;
@@ -312,7 +312,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.checkbox-text span {
+.checkbox__text span {
   width: 16px;
   height: 15px;
   border: 2px solid var(--main-color-text);
@@ -323,13 +323,13 @@ body {
   fill: transparent;
   margin-right: 5px;
 }
-.input-check:checked + .checkbox-text span {
+.input-check:checked + .checkbox__text span {
   background: var(--accent-color);
   border: transparent;
   fill: var(--white-color);
 }
 
-.checkbox-link {
+.checkbox__link {
   font-weight: inherit;
   font-size: 14px;
   line-height: 1.71;
@@ -339,7 +339,7 @@ body {
   cursor: pointer;
 }
 
-.input-btn-send {
+.btn-send {
   margin-left: auto;
   margin-right: auto;
 }
@@ -449,7 +449,7 @@ body {
   bottom: -1px;
 }
 
-.contact__list {
+.contact {
   display: flex;
   margin-left: auto;
   gap: 30px;
@@ -658,6 +658,11 @@ body {
   margin-bottom: 16px;
 }
 
+.team .social {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .client > .sections-title {
   margin-bottom: 50px;
 }
@@ -737,11 +742,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.social {
-  width: 206px;
-  height: 80px;
-}
-
 .social__title {
   font-weight: var(--second-font-weight);
   font-size: 14px;
@@ -805,7 +805,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-form__input-btn {
+.btn-send {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--white-color);
@@ -824,7 +824,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.footer-form__input-btn:focus, .footer-form__input-btn:hover {
+.btn-send:focus, .btn-send:hover {
   background-color: var(--btn-active);
 }
 
@@ -832,14 +832,14 @@ body {
   margin-left: 10px;
 }
 
-.btn-list {
+.buttons__list {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
   gap: 8px;
 }
 
-.btn-list__btn {
+.buttons__btn {
   background-color: var(--another-background-color);
   color: inherit;
   font-family: var(--main-font-family);
@@ -853,15 +853,15 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-list__btn:focus, .btn-list__btn:hover {
+.buttons__btn:focus, .buttons__btn:hover {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
-.btn-list__btn--first {
+.buttons__btn--first {
   padding: 6px 25px;
 }
 
-.portfolio-list {
+.project__list {
   display: flex;
   flex-wrap: wrap;
   /* Фіксована (при видаленні img не втрачається ширина) сітка для елементів li, замість gap*/
@@ -869,7 +869,7 @@ body {
   margin-top: calc(-1 * var(--image-gap));
 }
 
-.portfolio-list__item {
+.project__item {
   flex-basis: calc(33.3333333333% - var(--image-gap));
   margin-left: var(--image-gap);
   margin-top: var(--image-gap);
@@ -899,13 +899,13 @@ body {
   color: var(--second-maim-color-text);
 }
 
-.portfolio-list__link {
+.project__link {
   display: block;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-list__link:focus, .portfolio-list__link:hover {
+.project__link:focus, .project__link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -932,6 +932,6 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-list__link:focus .cover-container__text, .portfolio-list__link:hover .cover-container__text {
+.project__link:focus .cover-container__text, .project__link:hover .cover-container__text {
   transform: translateY(0);
 }/*# sourceMappingURL=main.css.map */

@@ -1,11 +1,11 @@
-.btn-list {
+.buttons__list {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
   gap: 8px;
 }
 
-.btn-list__btn {
+.buttons__btn {
   background-color: var(--another-background-color);
   color: inherit;
   font-family: var(--main-font-family);
@@ -26,7 +26,7 @@
   }
 }
 
-.portfolio-list {
+.project__list {
   display: flex;
   flex-wrap: wrap;
   /* Фіксована (при видаленні img не втрачається ширина) сітка для елементів li, замість gap*/
@@ -34,7 +34,7 @@
   margin-top: calc(-1 * var(--image-gap));
 }
 
-.portfolio-list__item {
+.project__item {
   flex-basis: calc(100% / 3 - var(--image-gap));
   margin-left: var(--image-gap);
   margin-top: var(--image-gap);
@@ -58,7 +58,7 @@
   color: var(--second-maim-color-text);
 }
 
-.portfolio-list__link {
+.project__link {
   display: block;
   transition-property: box-shadow;
   @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
@@ -89,8 +89,8 @@
   transition-property: transform;
   @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
 
-  .portfolio-list__link:focus &,
-  .portfolio-list__link:hover & {
+  .project__link:focus &,
+  .project__link:hover & {
     transform: translateY(0);
   }
 }
