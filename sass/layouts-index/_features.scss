@@ -4,19 +4,14 @@
 }
 
 .features-title {
-  font-weight: var(--second-font-weight);
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(var(--second-font-weight), 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--main-color-text);
   margin-bottom: 10px;
 }
 
 .features-text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(inherit, 14px, 1.71, 0.03em);
   color: var(--second-maim-color-text);
 }
 
@@ -26,7 +21,5 @@
   border-radius: 4px;
   background: var(--another-background-color);
   margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include displayCenter(flex, center, center);
 }

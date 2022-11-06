@@ -36,9 +36,7 @@
 }
 
 .footer-link {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(inherit, 14px, 1.71, 0.03em);
   &.address {
     color: var(--white-color);
   }
@@ -49,10 +47,7 @@
 }
 
 .footer-social-title {
-  font-weight: var(--second-font-weight);
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(var(--second-font-weight), 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
@@ -75,14 +70,11 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include displayCenter(flex, center, center);
   background: rgba(255, 255, 255, 0.1);
   fill: var(--white-color);
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
 
   &:hover,
   &:focus {
@@ -91,10 +83,7 @@
 }
 
 .footer-input-title {
-  font-weight: var(--second-font-weight);
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(var(--second-font-weight), 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--white-color);
 }
@@ -110,15 +99,11 @@
   padding-left: 16px;
   padding-right: 16px;
   margin-right: 12px;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  @include font(inherit, 16px, 1.25, 0.03em);
   color: var(--white-color);
 
   &::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    @include font(inherit, 16px, 1.25, 0.03em);
     color: rgba(255, 255, 255, 0.6);
   }
 }
@@ -133,19 +118,13 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--white-color);
   fill: var(--white-color);
-  font-weight: var(--second-font-weight);
-  font-size: 16px;
-  line-height: 1.87;
+  @include font(var(--second-font-weight), 16px, 1.87, 0.06em);
   min-width: 200px;
   height: 50px;
-  letter-spacing: 0.06em;
   outline: none;
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  @include displayCenter(flex, center, center);
 
   &:focus,
   &:hover {

@@ -22,6 +22,20 @@
     url(../images/top-bg.jpg);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 p,
 h1,
 h2,
@@ -79,20 +93,6 @@ body {
   color: var(--accent-color);
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -130,8 +130,8 @@ body {
   font-weight: var(--second-font-weight);
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--main-color-text);
   margin-bottom: 50px;
 }
@@ -197,8 +197,8 @@ body {
   font-weight: var(--second-font-weight);
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 12px;
 }
 
@@ -211,6 +211,7 @@ body {
 }
 
 .input-title {
+  font-weight: inherit;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -223,6 +224,7 @@ body {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  font-weight: inherit;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -247,18 +249,21 @@ body {
   resize: none;
 }
 .modal-input.comment::-moz-placeholder {
+  font-weight: inherit;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-input.comment:-ms-input-placeholder {
+  font-weight: inherit;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-input.comment::placeholder {
+  font-weight: inherit;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -296,6 +301,7 @@ body {
 }
 
 .checkbox-text {
+  font-weight: inherit;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -323,6 +329,7 @@ body {
 }
 
 .checkbox-link {
+  font-weight: inherit;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -471,10 +478,10 @@ body {
   font-weight: var(--second-font-weight);
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.06em;
   min-width: 216px;
   display: flex;
   text-align: center;
-  letter-spacing: 0.06em;
   padding: 10px 32px;
   align-items: center;
   margin-left: auto;
@@ -503,6 +510,7 @@ body {
 }
 
 .features-text {
+  font-weight: inherit;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -554,8 +562,8 @@ body {
   font-weight: var(--second-font-weight);
   font-size: 14px;
   line-height: 1.14;
-  align-items: center;
   letter-spacing: 0.03em;
+  align-items: center;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -591,17 +599,18 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--main-color-text);
   margin-bottom: 10px;
 }
 
 .team-text {
+  font-weight: var(--main-font-weight);
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--second-maim-color-text);
   margin-bottom: 16px;
 }
@@ -641,9 +650,9 @@ body {
 }
 
 .clients-list {
-  display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -707,6 +716,7 @@ body {
 }
 
 .footer-link {
+  font-weight: inherit;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -778,24 +788,28 @@ body {
   padding-left: 16px;
   padding-right: 16px;
   margin-right: 12px;
+  font-weight: inherit;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
 .footer-input::-moz-placeholder {
+  font-weight: inherit;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-input:-ms-input-placeholder {
+  font-weight: inherit;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-input::placeholder {
+  font-weight: inherit;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -815,9 +829,9 @@ body {
   font-weight: var(--second-font-weight);
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.06em;
   min-width: 200px;
   height: 50px;
-  letter-spacing: 0.06em;
   outline: none;
   transition-property: background-color;
   transition-duration: 250ms;
@@ -848,8 +862,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   padding: 6px 22px;
   transition-property: background-color, color;
   transition-duration: 250ms;
@@ -894,9 +908,11 @@ body {
 
 .portfolio-text {
   font-family: var(--main-font-family);
+  font-weight: inherit;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  color: var(--second-maim-color-text);
 }
 
 .portfolio-link {
@@ -921,6 +937,7 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
+  font-weight: inherit;
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.03em;
