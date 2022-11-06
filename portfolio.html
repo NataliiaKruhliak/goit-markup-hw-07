@@ -22,43 +22,42 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
-        <nav class="header-nav">
-          <a class="logo link" href="./index.html" lang="en"
+      <div class="container header__container">
+        <nav class="navigation">
+          <a class="logo navigation__logo link" href="./index.html" lang="en"
             >Web<span lang="en">Studio</span></a
           >
-          <ul class="header-list list">
-            <li class="header-item">
-              <a class="header-nav-link link" href="./index.html">Студія</a>
+          <ul class="menu list">
+            <li class="menu__item">
+              <a class="menu__link link" href="./index.html">Студія</a>
             </li>
-            <li class="header-item">
-              <a class="header-nav-link link current" href="./portfolio.html"
+            <li class="menu__item">
+              <a
+                class="menu__link link menu__link--current"
+                href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
-            <li class="header-item">
-              <a class="header-nav-link link" href="#">Контакти</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-contact-list list">
-          <li class="header-contact-item">
+        <ul class="contact__list list">
+          <li class="contact__item">
             <a
-              class="header-contact-link mailto nav-link link"
+              class="contact__link nav-link link"
               href="mailto:info@devstudio.com"
             >
-              <svg class="icon-header" width="16" height="12">
+              <svg class="contact__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-mailto"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="header-contact-item item">
-            <a
-              class="header-contact-link number nav-link link"
-              href="tel:+380961111111"
-            >
-              <svg class="icon-header" width="10" height="16">
+          <li class="contact__item item">
+            <a class="contact__link nav-link link" href="tel:+380961111111">
+              <svg class="contact__icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -69,203 +68,210 @@
     </header>
     <main>
       <section class="portfolio section">
-        <div class="container">
-          <h1 class="visually-hidden">Портфоліо</h1>
+        <div class="container portfolio__container">
+          <h1 class="visually-hidden portfolio__title">Портфоліо</h1>
           <ul class="btn-list list">
-            <li class="btn-item">
-              <button class="portfolio-btn first btn" type="button">Усі</button>
+            <li class="btn-list__item">
+              <button
+                class="btn-list__btn btn-list__btn--first btn"
+                type="button"
+              >
+                Усі
+              </button>
             </li>
-            <li class="btn-item">
-              <button class="portfolio-btn btn" type="button">Веб-сайти</button>
+            <li class="btn-list__item">
+              <button class="btn-list__btn btn" type="button">Веб-сайти</button>
             </li>
-            <li class="btn-item">
-              <button class="portfolio-btn btn" type="button">Додатки</button>
+            <li class="btn-list__item">
+              <button class="btn-list__btn btn" type="button">Додатки</button>
             </li>
-            <li class="btn-item">
-              <button class="portfolio-btn btn" type="button">Дизайн</button>
+            <li class="btn-list__item">
+              <button class="btn-list__btn btn" type="button">Дизайн</button>
             </li>
-            <li class="btn-item">
-              <button class="portfolio-btn btn" type="button">Маркетинг</button>
+            <li class="btn-list__item">
+              <button class="btn-list__btn btn" type="button">Маркетинг</button>
             </li>
           </ul>
           <ul class="portfolio-list list">
-            <li class="portfolio-item">
-              <a class="portfolio-link">
-                <div class="portfolio-cover-container">
+            <li class="portfolio-list__item">
+              <a class="portfolio-list__link">
+                <div class="cover-container">
                   <img
-                    class="portfolio-image"
+                    class="cover-container__image"
                     src="./images/portfolio/screen-laptop.jpg"
                     alt="Екран монітору"
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-cover-text">
+                  <p class="cover-container__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="portfolio-contant">
-                  <h2 class="portfolio-title">Технокряк</h2>
-                  <p class="portfolio-text">Веб-сайт</p>
+                  <h2 class="portfolio-contant__title">Технокряк</h2>
+                  <p class="portfolio-contant__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link">
-                <div class="portfolio-cover-container">
+            <li class="portfolio-list__item">
+              <a class="portfolio-list__link">
+                <div class="cover-container">
                   <img
-                    class="portfolio-image"
+                    class="cover-container__image"
                     src="./images/portfolio/two-play-ball.jpg"
                     alt="Двоє людей грає в баскетбол"
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-cover-text"></p>
+                  <p class="cover-container__text"></p>
                 </div>
                 <div class="portfolio-contant">
-                  <h2 class="portfolio-title">
+                  <h2 class="portfolio-contant__title">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
-                  <p class="portfolio-text">Дизайн</p>
+                  <p class="portfolio-contant__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link">
-                <div class="portfolio-cover-container">
+            <li class="portfolio-list__item">
+              <a class="portfolio-list__link">
+                <div class="cover-container">
                   <img
-                    class="portfolio-image"
+                    class="cover-container__image"
                     src="./images/portfolio/seafood.jpg"
                     alt="Логотип ресторану морської їжі"
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-cover-text"></p>
+                  <p class="cover-container__text"></p>
                 </div>
                 <div class="portfolio-contant">
-                  <h2 class="portfolio-title">
+                  <h2 class="portfolio-contant__title">
                     Ресторан <span lang="en">Seafood</span>
                   </h2>
-                  <p class="portfolio-text">Додаток</p>
+                  <p class="portfolio-contant__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link">
-                <div class="portfolio-cover-container">
+            <li class="portfolio-list__item">
+              <a class="portfolio-list__link">
+                <div class="cover-container">
                   <img
-                    class="portfolio-image"
+                    class="cover-container__image"
                     src="./images/portfolio/headphone.jpg"
                     alt="Великі навушники"
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-cover-text"></p>
+                  <p class="cover-container__text"></p>
                 </div>
                 <div class="portfolio-contant">
-                  <h2 class="portfolio-title">
+                  <h2 class="portfolio-contant__title">
                     Проєкт <span lang="en">Prime</span>
                   </h2>
-                  <p class="portfolio-text">Маркетинг</p>
+                  <p class="portfolio-contant__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link">
-                <div class="portfolio-cover-container">
+            <li class="portfolio-list__item">
+              <a class="portfolio-list__link">
+                <div class="cover-container">
                   <img
-                    class="portfolio-image"
+                    class="cover-container__image"
                     src="./images/portfolio/two-boxes.jpg"
                     alt="Дві коробки"
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-cover-text"></p>
+                  <p class="cover-container__text"></p>
                 </div>
                 <div class="portfolio-contant">
-                  <h2 class="portfolio-title">
+                  <h2 class="portfolio-contant__title">
                     Проєкт <span lang="en">Boxes</span>
                   </h2>
-                  <p class="portfolio-text">Додаток</p>
+                  <p class="portfolio-contant__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link">
-                <div class="portfolio-cover-container">
+            <li class="portfolio-list__item">
+              <a class="portfolio-list__link">
+                <div class="cover-container">
                   <img
-                    class="portfolio-image"
+                    class="cover-container__image"
                     src="./images/portfolio/monitor.jpg"
                     alt="Монітор компю'ютера"
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-cover-text"></p>
+                  <p class="cover-container__text"></p>
                 </div>
                 <div class="portfolio-contant">
-                  <h2 class="portfolio-title" lang="en">
+                  <h2 class="portfolio-contant__title" lang="en">
                     Inspiration has no Borders
                   </h2>
-                  <p class="portfolio-text">Веб-сайт</p>
+                  <p class="portfolio-contant__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link">
-                <div class="portfolio-cover-container">
+            <li class="portfolio-list__item">
+              <a class="portfolio-list__link">
+                <div class="cover-container">
                   <img
-                    class="portfolio-image"
+                    class="cover-container__image"
                     src="./images/portfolio/magazine.jpg"
                     alt="Відкритий журнал"
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-cover-text"></p>
+                  <p class="cover-container__text"></p>
                 </div>
                 <div class="portfolio-contant">
-                  <h2 class="portfolio-title">
+                  <h2 class="portfolio-contant__title">
                     Видання <span lang="en">Limited Edition</span>
                   </h2>
-                  <p class="portfolio-text">Дизайн</p>
+                  <p class="portfolio-contant__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link">
-                <div class="portfolio-cover-container">
+            <li class="portfolio-list__item">
+              <a class="portfolio-list__link">
+                <div class="cover-container">
                   <img
-                    class="portfolio-image"
+                    class="cover-container__image"
                     src="./images/portfolio/tea-pag.jpg"
                     alt="Пакетик чаю з назвою проекту"
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-cover-text"></p>
+                  <p class="cover-container__text"></p>
                 </div>
                 <div class="portfolio-contant">
-                  <h2 class="portfolio-title">
+                  <h2 class="portfolio-contant__title">
                     Проєкт <span lang="en">LAB</span>
                   </h2>
-                  <p class="portfolio-text">Маркетинг</p>
+                  <p class="portfolio-contant__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link">
-                <div class="portfolio-cover-container">
+            <li class="portfolio-list__item">
+              <a class="portfolio-list__link">
+                <div class="cover-container">
                   <img
-                    class="portfolio-image"
+                    class="cover-container__image"
                     src="./images/portfolio/laptop.jpg"
                     alt="Друк на клавіатурі"
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-cover-text"></p>
+                  <p class="cover-container__text"></p>
                 </div>
                 <div class="portfolio-contant">
-                  <h2 class="portfolio-title" lang="en">Growing Business</h2>
-                  <p class="portfolio-text">Додаток</p>
+                  <h2 class="portfolio-contant__title" lang="en">
+                    Growing Business
+                  </h2>
+                  <p class="portfolio-contant__text">Додаток</p>
                 </div>
               </a>
             </li>
@@ -274,85 +280,87 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="container-address">
-          <a class="logo link" href="./index.html" lang="en"
+      <div class="container footer__container">
+        <div class="address-container">
+          <a class="logo footer__logo link" href="./index.html" lang="en"
             >Web<span lang="en">Studio</span></a
           >
-          <address class="footer-address">
-            <ul class="footer-list list">
-              <li class="footer-item">
+          <address class="address">
+            <ul class="address__list list">
+              <li class="address__item">
                 <a
-                  class="footer-link address link"
+                  class="address__link address__link--white link"
                   href="https://goo.gl/maps/SXXD5D3ic1gdtgaX6"
                   rel="noopener noreferrer "
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="footer-item">
+              <li class="address__item">
                 <a
-                  class="footer-link contact link"
+                  class="address__link address__link--grey link"
                   href="mailto:info@devstudio.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="footer-item">
-                <a class="footer-link contact link" href="tel:+380991111111"
+              <li class="address__item">
+                <a
+                  class="address__link address__link--grey link"
+                  href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-social-container">
-          <h3 class="footer-social-title">приєднуйтесь</h3>
-          <ul class="footer-social-list">
-            <li class="social-icon-item">
-              <a class="social-icon-link" href="">
-                <svg class="icon-network" width="20" height="20">
+        <div class="social">
+          <h3 class="social__title">приєднуйтесь</h3>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--bgcolor-grey" href="">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-icon-item">
-              <a class="social-icon-link" href="">
-                <svg class="icon-network" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link social__link--bgcolor-grey" href="">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-icon-item">
-              <a class="social-icon-link" href="">
-                <svg class="icon-network" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link social__link--bgcolor-grey" href="">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-icon-item">
-              <a class="social-icon-link" href="">
-                <svg class="icon-network" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link social__link--bgcolor-grey" href="">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-input-container" style="margin-left: auto">
-          <form class="form">
-            <label for="mailing" class="footer-input-title"
+        <div class="input" style="margin-left: auto">
+          <form class="footer-form input__form">
+            <label for="mailing" class="footer-form__title"
               >Підпишіться на розсилку
             </label>
-            <div class="input-container">
+            <div class="footer-form__input-container">
               <input
                 type="email"
-                class="footer-input"
+                class="footer-form__input"
                 name="E-mail"
                 id="mailing"
                 placeholder="E-mail"
               />
-              <button type="submit" class="btn input-btn-send">
+              <button type="submit" class="btn footer-form__input-btn">
                 Підписатися
-                <svg class="icon-send" width="24" height="24">
+                <svg class="footer-form__input-btn-icon" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-send"></use>
                 </svg>
               </button>

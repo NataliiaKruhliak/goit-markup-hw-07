@@ -1,4 +1,4 @@
-.direction-list {
+.direction__list {
   padding: 0;
   margin: 0;
   display: flex;
@@ -7,14 +7,14 @@
   margin-top: calc(-1 * var(--image-gap));
 }
 
-.direction-item {
+.direction__item {
   position: relative;
   flex-basis: calc(100% / 3 - var(--image-gap));
   margin-left: var(--image-gap);
   margin-top: var(--image-gap);
 }
 
-.direction-container {
+.direction__image-container {
   @include displayCenter(flex, center, center);
   position: absolute;
   bottom: 0;
@@ -26,7 +26,7 @@
   padding-bottom: 27px;
 }
 
-.direction-title {
+.direction__image-title {
   @include font(var(--second-font-weight), 14px, 1.14, 0.03em);
   align-items: center;
   text-transform: uppercase;

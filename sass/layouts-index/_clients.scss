@@ -2,19 +2,19 @@
   margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
   flex-wrap: wrap;
   gap: 30px;
   @include displayCenter(flex, center, center);
 }
 
-.clients-item {
+.clients__item {
   /* width: 170px; */
   width: calc((100% - 150px) / 6);
   height: 92px;
 }
 
-.clients-link {
+.clients__link {
   width: 100%;
   height: 100%;
   border: 1px solid #afb1b8;

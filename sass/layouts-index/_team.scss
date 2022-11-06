@@ -2,7 +2,7 @@
   background-color: var(--another-background-color);
 }
 
-.team-list {
+.team__list {
   padding: 0;
   margin: 0;
   display: flex;
@@ -11,7 +11,7 @@
   margin-top: calc(-1 * var(--image-gap));
 }
 
-.team-item {
+.team__item {
   background-color: var(--white-color);
   flex-basis: calc(100% / 3 - var(--image-gap));
   margin-left: var(--image-gap);
@@ -26,45 +26,16 @@
   padding-bottom: 30px;
 }
 
-.team-title {
+.team-contant__title {
   @include font(500, 16px, 1.18, 0.03em);
   text-align: center;
   color: var(--main-color-text);
   margin-bottom: 10px;
 }
 
-.team-text {
+.team-contant__text {
   @include font(var(--main-font-weight), 16px, 1.18, 0.03em);
   text-align: center;
   color: var(--second-maim-color-text);
   margin-bottom: 16px;
-}
-
-.team-icon-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-}
-
-.team-icon-item {
-  width: 44px;
-  height: 44px;
-}
-
-.team-icon-link {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  @include displayCenter(flex, center, center);
-  fill: #afb1b8;
-  transition-property: background-color, fill;
-  @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
-
-  &:hover,
-  &:focus {
-    background-color: #2196f3;
-    fill: #ffffff;
-  }
 }
